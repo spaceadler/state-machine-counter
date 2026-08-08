@@ -38,7 +38,7 @@ Both FSMs share the same three-state shape, but differ in direction, exit condit
         i_go = '0'                          w_cntr = "111"
  IDLE ────────────────► COUNT ────────────────────────────► DONE
   ▲                  (w_cntr++ each tick)                      │
-  │                                                             │ o_dn = '1', holds
+  │                                                            │ o_dn = '1', holds
   └── i_rst = '0'  (async, from any state) ────────────────────┘
 ```
 
