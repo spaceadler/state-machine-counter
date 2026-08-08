@@ -1,6 +1,6 @@
 # Cascaded Moore Counter
 
-> A hierarchical VHDL design built from two cascaded Moore state machines: one counts up from 0 to 7, then hands control off to a second machine that counts back down from 7 to 0 — both sharing a single 3-bit LED bank through a structural mux. Written for a Quartus-targeted FPGA.
+> A hierarchical VHDL design built from two cascaded Moore state machines: one counts up from 0 to 7, then hands control off to a second machine that counts back down from 7 to 0 with both sharing a single 3-bit LED bank through a structural mux. Written for a Quartus-targeted FPGA.
 
 ![Language](https://img.shields.io/badge/Language-VHDL-purple)
 ![Architecture](https://img.shields.io/badge/Architecture-Moore%20FSM-orange)
