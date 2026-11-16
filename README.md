@@ -66,5 +66,7 @@ LEDs : 0   1  2  3  4  5  6  7  6  5  4  3  2  1  0
 ghdl -a --std=08 moore_machine_up.vhd moore_machine_down.vhd top_level.vhd <your_tb>.vhd
 ```
 
+**Codemap:** [CODEMAP.md](CODEMAP.md), the entities, ports and processes, generated from the code.
+
 ---
 *powered by logic, coffee, and many sleepless nights*
