@@ -13,7 +13,7 @@
 ## Architecture
 
 ```mermaid
-flowchart LR
+flowchart TB
     clk[sys_clk] --> up & dn
     rst["btn_reset (active low)"] --> up & dn
     go["btn_go (active low)"] --> up["moore_machine_up<br/>0 → 7"]
