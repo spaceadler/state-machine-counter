@@ -2,7 +2,7 @@
 
 ← [README](README.md)
 
-> Generated from commit `5b494c6` by `scripts/codemap.py`. Regenerate it from the workspace root with `python3 scripts/codemap.py state-machine-counter`; don't edit it by hand.
+> Generated from commit `982e442` by `scripts/codemap.py`. Regenerate it from the workspace root with `python3 scripts/codemap.py state-machine-counter`; don't edit it by hand.
 
 ## Design
 
