@@ -62,9 +62,17 @@ LEDs : 0   1  2  3  4  5  6  7  6  5  4  3  2  1  0
 
 ```bash
 # Quartus 13.0sp1 (the last with Cyclone II): open top_level.qsf, compile, program over USB-Blaster
-# simulation: set MAX_COUNT to 4 in the generic map so the waveform is readable
-ghdl -a --std=08 moore_machine_up.vhd moore_machine_down.vhd top_level.vhd <your_tb>.vhd
 ```
+
+## Simulation
+
+```bash
+ghdl -a --std=08 moore_machine_up.vhd moore_machine_down.vhd tb_counter.vhd
+ghdl -e --std=08 tb_counter
+ghdl -r --std=08 tb_counter --vcd=tb_counter.vcd   # prints PASS or what went wrong
+```
+
+`tb_counter.vhd` wires the two counters together as `top_level.vhd` does, with `MAX_COUNT` = 4 (one tick every 4 clocks). It presses go for a single clock and checks that the LEDs read 0, 1…7, 6…0 with every value in between shown for exactly one tick.
 
 **Codemap:** [CODEMAP.md](CODEMAP.md), the entities, ports and processes, generated from the code.
 
